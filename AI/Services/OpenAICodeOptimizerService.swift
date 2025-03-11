@@ -1,15 +1,7 @@
-//
-//  CodeOptimizerService 2.swift
-//  AI
-//
-//  Created by Michael Winkler on 11.03.25.
-//
-
-
 import Foundation
 
-class CodeOptimizerService {
-    static let shared = CodeOptimizerService()
+class OpenAICodeOptimizerService {
+    static let shared = OpenAICodeOptimizerService()
     private let apiKey = "DEIN_OPENAI_API_KEY"
 
     private init() {}

@@ -1,10 +1,3 @@
-//
-//  CodeTextEditor.swift
-//  AI
-//
-//  Created by Michael Winkler on 11.03.25.
-//
-
 import SwiftUI
 
 struct CodeTextEditor: View {
