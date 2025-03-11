@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/dracula.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/swift/swift.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/edit/closetag.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/edit/matchbrackets.min.js"></script>
+    <style>
+        body { margin: 0; padding: 0; background: #282a36; color: #f8f8f2; font-family: Arial, sans-serif; }
+        .editor-container { width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: center; }
+        .CodeMirror { width: 90%; height: 90vh; font-size: 16px; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <div class="editor-container">
+        <textarea id="codeEditor">// Dein Swift-Code hier</textarea>
+    </div>
+    <script>
+        var editor = CodeMirror.fromTextArea(document.getElementById("codeEditor"), {
+            mode: "swift",
+            theme: "dracula",
+            lineNumbers: true,
+            autoCloseTags: true,
+            matchBrackets: true,
+            indentUnit: 4,
+            tabSize: 4,
+        });
+    </script>
+</body>
+</html>
