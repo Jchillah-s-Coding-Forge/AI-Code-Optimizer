@@ -1,10 +1,3 @@
-//
-//  CodeOptimizerService.swift
-//  AI
-//
-//  Created by Michael Winkler on 11.03.25.
-//
-
 import Foundation
 
 class GeminiCodeOptimizerService {
